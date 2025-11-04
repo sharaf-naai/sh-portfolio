@@ -94,7 +94,7 @@ const Experience = () => {
       id="experience"
       className="flex-center md:mt-40 mt-20 section-padding xl:px-0"
     >
-      <div className="w-full h-full md:px-20 px-5">
+      <div className="w-full mr-10 h-full md:px-20 px-5">
         <TitleHeader
           title="Professional Work Experience"
           sub="💼 My Career Overview"
@@ -104,11 +104,11 @@ const Experience = () => {
             {expCards.map((card) => (
               <div key={card.title} className="exp-card-wrapper">
                 <div className="xl:w-2/6">
-                  <GlowCard card={card}>
-                    {/* <div>
+                  {/* <GlowCard card={card}>
+                     <div>
                       <img src={card.imgPath} alt="exp-img" />
-                    </div> */}
-                  </GlowCard>
+                    </div> 
+                  </GlowCard> */}
                 </div>
                 <div className="xl:w-4/6">
                   <div className="flex items-start">

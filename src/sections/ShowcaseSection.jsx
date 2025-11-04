@@ -45,11 +45,11 @@ const AppShowcase = () => {
 
   return (
     <div id="work" ref={sectionRef} className="app-showcase">
-      <div className="w-full">
+      <div className="w-full flex flex-col gap-10">
         <div className="showcaselayout">
-          <div ref={rydeRef} className="first-project-wrapper">
+          <div ref={rydeRef} className="first-project-wrapper ">
             <div className="image-wrapper hover:scale-105 transition-transform duration-300 ease-in-out">
-              <a href="https://hanabaly.onrender.com" target="_blank"><img src="/images/project3.png" alt="Ryde App Interface" /></a>
+              <a href="" target="_blank"><img src="/images/project4.png" className="gradient-border" alt="Ryde App Interface" /></a>
             </div>
             <div className="text-content">
               <h2>
@@ -63,7 +63,7 @@ const AppShowcase = () => {
 
           <div className="project-list-wrapper overflow-hidden">
             <div className="project" ref={libraryRef}>
-              <div className="image-wrapper bg-[#FFEFDB] hover:scale-105 transition-transform duration-300 ease-in-out">
+              <div className="image-wrapper bg-[#FFEFDB]">
                 <a href="https://hanabaly.onrender.com" target="_blank"><img
                   src="/images/project2.png"
                   alt="Library Management Platform"
@@ -73,13 +73,52 @@ const AppShowcase = () => {
             </div>
 
             <div className="project" ref={ycDirectoryRef}>
-              <div className="image-wrapper bg-[#FFE7EB] hover:scale-105 transition-transform duration-300 ease-in-out">
+              <div className="image-wrapper bg-[#FFE7EB]">
                 <a href="https://hanabaly.onrender.com" target="_blank"><img src="/images/project1.png" alt="YC Directory App" /></a>
               </div>
               <h2>Connecting You with Psychologists and Mental Coaches
                 Through a Seamless Online Platform — Hanabaly.</h2>
             </div>
           </div>
+        </div>
+
+
+        <div className="showcaselayout">
+
+          <div className="project-list-wrapper2 overflow-hidden">
+            <div className="project" ref={libraryRef}>
+              <div className="image-wrapper bg-[#FFEFDB]">
+                <a href="https://hanabaly.onrender.com" target="_blank"><img
+                  src="/images/project3.png"
+                  alt="Library Management Platform"
+                /></a>
+              </div>
+              <h2>Refreshing Flavors, Bold Identity — Discover SHARAF, the Modern Drink for Every Taste.</h2>
+            </div>
+
+            {/* <div className="project" ref={ycDirectoryRef}>
+              <div className="image-wrapper bg-[#FFE7EB] hover:scale-105 transition-transform duration-300 ease-in-out">
+                <a href="https://hanabaly.onrender.com" target="_blank"><img src="/images/project1.png" alt="YC Directory App" /></a>
+              </div>
+              <h2>Connecting You with Psychologists and Mental Coaches
+                Through a Seamless Online Platform — Hanabaly.</h2>
+            </div> */}
+          </div>
+
+          <div ref={rydeRef} className="first-project-wrapper2">
+            <div className="image-wrapper hover:scale-105 transition-transform duration-300 ease-in-out">
+              <a href="" target="_blank"><img src="/images/project5.png" className="gradient-border1" alt="Ryde App Interface" /></a>
+            </div>
+            <div className="text-content">
+              <h2>
+                Modern Artisanal Baking Made Simple with a Fresh, Contemporary Touch — Lola’s Bakery.
+              </h2>
+              <p className="text-white-50 md:text-xl">
+                An app built with React, Three, GSAP, & TailwindCSS for smooth and good looking 3D animations.
+              </p>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>

@@ -64,12 +64,12 @@ const Hero = () => {
           </div>
         </header>
 
-        {/* RIGHT: 3D Model or Visual
+        {/* RIGHT: 3D Model or Visual */}
         <figure>
           <div className="hero-3d-layout">
-            <HeroExperience />
+            {/* <HeroExperience /> */}
           </div>
-        </figure> */}
+        </figure>
       </div>
 
       <AnimatedCounter />
