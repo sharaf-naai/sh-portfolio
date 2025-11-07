@@ -5,51 +5,51 @@ import TitleHeader from "../components/TitleHeader";
 import ContactExperience from "../components/models/contact/ContactExperience";
 
 const Contact = () => {
-  const formRef = useRef(null);
-  const [loading, setLoading] = useState(false);
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  // const formRef = useRef(null);
+  // const [loading, setLoading] = useState(false);
+  // const [form, setForm] = useState({
+  //   name: "",
+  //   email: "",
+  //   message: "",
+  // });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setForm({ ...form, [name]: value });
-  };
+  // const handleChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setForm({ ...form, [name]: value });
+  // };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true); // Show loading state
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   setLoading(true); // Show loading state
 
-    try {
-      await emailjs.sendForm(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        formRef.current,
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      );
+  //   try {
+  //     await emailjs.sendForm(
+  //       import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+  //       import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+  //       formRef.current,
+  //       import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+  //     );
 
-      // Reset form and stop loading
-      setForm({ name: "", email: "", message: "" });
-    } catch (error) {
-      console.error("EmailJS Error:", error); // Optional: show toast
-    } finally {
-      setLoading(false); // Always stop loading, even on error
-    }
-  };
+  //     // Reset form and stop loading
+  //     setForm({ name: "", email: "", message: "" });
+  //   } catch (error) {
+  //     console.error("EmailJS Error:", error); // Optional: show toast
+  //   } finally {
+  //     setLoading(false); // Always stop loading, even on error
+  //   }
+  // };
 
   return (
     <section id="contact" className="flex-center section-padding">
       <div className="w-full h-full md:px-10 px-5">
         <TitleHeader
           title="Get in Touch – Let’s Connect"
-          sub="💬 Have questions or ideas? Let’s talk! 🚀"
+          sub="💬"
         />
-        <div className="grid-12-cols mt-16">
-          <div className="xl:col-span-5">
+        <div className="grid-2-cols mt-16 justify-between">
+          <div className="xl:col-span-5 w-full mb-10 xl:mb-0">
             <div className="flex-center card-border rounded-xl p-10">
-              <form
+              {/* <form
                 ref={formRef}
                 onSubmit={handleSubmit}
                 className="w-full flex flex-col gap-7"
@@ -104,7 +104,31 @@ const Contact = () => {
                     </div>
                   </div>
                 </button>
-              </form>
+              </form> */}
+              <p className="text-center text-2xl font-mono">
+                Contact Me via email {" @ "}
+                <a
+                  target="blank_"
+                  href="mailto:c.naai8980@uca.ac.ma"
+                  className="text-[#585bfc] font-medium underline"
+                >
+                c.naai8980@uca.ac.ma
+                  </a>
+                </p>
+            </div>
+          </div>
+          <div className="xl:col-span-5">
+            <div className="flex-center card-border rounded-xl p-10">
+              <p className="text-center text-2xl font-mono">
+              Or via WhatsApp {" @ "}
+              <a 
+                target="blank_"
+                href="https://wa.me/212681679598"
+                className="text-[#585bfc] font-medium underline"
+              >
+                +212 681-679598
+              </a>
+              </p>
             </div>
           </div>
           {/* <div className="xl:col-span-7 min-h-96">

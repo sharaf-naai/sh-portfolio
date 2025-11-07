@@ -29,9 +29,9 @@ const words = [
 ];
 
 const counterItems = [
-  { value: 5, suffix: "+", label: "Years of Experience" },
-  { value: 40, suffix: "+", label: "Satisfied Clients" },
-  { value: 30, suffix: "+", label: "Completed Projects" },
+  { value: 1.5, suffix: "+", label: "Years of Experience" },
+  { value: 5, suffix: "+", label: "Satisfied Clients" },
+  { value: 5, suffix: "+", label: "Completed Projects" },
   { value: 90, suffix: "%", label: "Client Retention Rate" },
 ];
 
@@ -151,7 +151,7 @@ const expCards = [
     imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
     title: "WordPress Developer",
-    date: "October 2019 - Present",
+    date: "Feb 2021 - Nov 2021",
     responsibilities: [
       "Developed custom WordPress themes and plugins tailored to client needs, ensuring responsive and modern design.",
       "Maintained and regularly updated websites to improve performance, security, and compatibility across devices.",
@@ -163,7 +163,7 @@ const expCards = [
     imgPath: "/images/exp2.png",
     logoPath: "/images/logo2.png",
     title: "Photoshop/Illustrator Designer",
-    date: "Sep 2020 - Present",
+    date: "Sep 2023 - Present",
     responsibilities: [
       "Created high-quality visual assets, including logos, posters, and social media designs aligned with brand identity.",
       "Enhanced images and illustrations through advanced photo editing and vector design techniques.",
@@ -175,11 +175,23 @@ const expCards = [
     imgPath: "/images/exp3.png",
     logoPath: "/images/logo3.png",
     title: "React Developer",
-    date: "Aug 2022 - Present",
+    date: "May 2024 - Present",
     responsibilities: [
       "Developed dynamic and responsive web interfaces using React and modern JavaScript frameworks.",
       "Implemented reusable components and optimized front-end performance for smoother user experiences.",
       "Integrated APIs and collaborated on UI/UX improvements to deliver high-quality, scalable web applications.",
+    ],
+  },
+  {
+    review: "Sharaf did an awesome job on my website. It runs smoothly, looks great on every device, and just feels professional. He really knows his stuff and made the whole process simple and stress-free.",
+    imgPath: "/images/exp3.png",
+    logoPath: "/images/logo4.svg",
+    title: "Web Security Pentester",
+    date: "Sep 2025 - Present",
+    responsibilities: [
+      "I'm currently working on enhancing web security measures to protect against cyber threats and vulnerabilities.",
+      "Implementing best practices for secure coding, data encryption, and user authentication to safeguard sensitive information.",
+      "Conducting regular security audits and vulnerability assessments to ensure robust protection for web applications.",
     ],
   },
   

@@ -10,7 +10,7 @@ body {
   width: 100dvw;
   overflow-x: hidden;
   /* background: url('/images/bgg.png');  */
-  background: linear-gradient(to bottom, #000832, #000000, #000000, #240131);
+  background: linear-gradient(to bottom, #000832, #000000, #000000, #000000, #240131);
   background-size: cover;
   background-position: center;
   /* background-attachment: fixed;  */
@@ -160,7 +160,7 @@ section {
 
   .app-showcase {
     @apply w-full mt-20 px-5 md:px-20 py-10 md:py-20 flex items-center justify-center;
-
+  
     .showcaselayout {
       @apply flex xl:flex-row flex-col gap-10 justify-between;
     }
@@ -187,6 +187,10 @@ section {
           @apply text-2xl md:text-3xl lg:text-4xl font-bold;
         }
       }
+    }
+
+    .app-showcase h2{
+      @apply font-serif;
     }
 
     .first-project-wrapper2 {

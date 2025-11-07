@@ -46,37 +46,39 @@ const AppShowcase = () => {
   return (
     <div id="work" ref={sectionRef} className="app-showcase">
       <div className="w-full flex flex-col gap-10">
+        <p className="w-full text-2xl text-center font-bold border-2 border-white rounded-2xl p-2 bg-black font-mono">✨I’ve shared a glimpse of each project through the homepage — 
+          don’t hesitate to contact me if you’d like to know more or have any questions!</p>
         <div className="showcaselayout">
           <div ref={rydeRef} className="first-project-wrapper ">
             <div className="image-wrapper hover:scale-105 transition-transform duration-300 ease-in-out">
-              <a href="" target="_blank"><img src="/images/project4.png" className="gradient-border" alt="Ryde App Interface" /></a>
+              <img src="/images/project4.png" className="gradient-border" alt="Ryde App Interface" />
             </div>
             <div className="text-content">
-              <h2>
-                Modern Artisanal Baking Made Simple with a Fresh, Contemporary Touch — Lola’s Bakery.
+              <h2 className="font-serif">
+                Where Timeless Aroma Meets Modern Ambiance — Indulge in the Perfect Coffee Experience.
               </h2>
-              <p className="text-white-50 md:text-xl">
+              {/* <p className="text-white-50 md:text-xl">
                 An app built with React, Three, GSAP, & TailwindCSS for smooth and good looking 3D animations.
-              </p>
+              </p> */}
             </div>
           </div>
 
           <div className="project-list-wrapper overflow-hidden">
             <div className="project" ref={libraryRef}>
               <div className="image-wrapper bg-[#FFEFDB]">
-                <a href="https://hanabaly.onrender.com" target="_blank"><img
+                <img
                   src="/images/project2.png"
                   alt="Library Management Platform"
-                /></a>
+                />
               </div>
-              <h2>Refreshing Flavors, Bold Identity — Discover SHARAF, the Modern Drink for Every Taste.</h2>
+              <h2 className="font-serif">Refreshing Flavors, Vibrant Energy — SHARAF Brings You the Taste of Every Mood.</h2>
             </div>
 
             <div className="project" ref={ycDirectoryRef}>
               <div className="image-wrapper bg-[#FFE7EB]">
                 <a href="https://hanabaly.onrender.com" target="_blank"><img src="/images/project1.png" alt="YC Directory App" /></a>
               </div>
-              <h2>Connecting You with Psychologists and Mental Coaches
+              <h2 className="font-serif">Connecting You with Psychologists and Mental Coaches
                 Through a Seamless Online Platform — Hanabaly.</h2>
             </div>
           </div>
@@ -88,12 +90,12 @@ const AppShowcase = () => {
           <div className="project-list-wrapper2 overflow-hidden">
             <div className="project" ref={libraryRef}>
               <div className="image-wrapper bg-[#FFEFDB]">
-                <a href="https://hanabaly.onrender.com" target="_blank"><img
+                <img
                   src="/images/project3.png"
                   alt="Library Management Platform"
-                /></a>
+                />
               </div>
-              <h2>Refreshing Flavors, Bold Identity — Discover SHARAF, the Modern Drink for Every Taste.</h2>
+              <h2 className="font-serif">Modern Artisanal Baking Made Simple with a Fresh, Contemporary Touch — Lola’s Bakery.</h2>
             </div>
 
             {/* <div className="project" ref={ycDirectoryRef}>
@@ -107,15 +109,15 @@ const AppShowcase = () => {
 
           <div ref={rydeRef} className="first-project-wrapper2">
             <div className="image-wrapper hover:scale-105 transition-transform duration-300 ease-in-out">
-              <a href="" target="_blank"><img src="/images/project5.png" className="gradient-border1" alt="Ryde App Interface" /></a>
+              <img src="/images/project5.png" className="gradient-border1" alt="Ryde App Interface" />
             </div>
             <div className="text-content">
-              <h2>
-                Modern Artisanal Baking Made Simple with a Fresh, Contemporary Touch — Lola’s Bakery.
+              <h2 className="font-serif">
+                Immersive Sound Meets Sleek Design — Experience the Art of Audio with Resonance Headphones.
               </h2>
-              <p className="text-white-50 md:text-xl">
+              {/* <p className="text-white-50 md:text-xl">
                 An app built with React, Three, GSAP, & TailwindCSS for smooth and good looking 3D animations.
-              </p>
+              </p> */}
             </div>
           </div>
 
