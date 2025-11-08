@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-
+import { FaWhatsapp } from "react-icons/fa";
 import TitleHeader from "../components/TitleHeader";
 import ContactExperience from "../components/models/contact/ContactExperience";
 
@@ -48,7 +48,7 @@ const Contact = () => {
         />
         <div className="grid-2-cols mt-16 justify-between">
           <div className="xl:col-span-5 w-full mb-10 xl:mb-0">
-            <div className="flex-center card-border rounded-xl p-10">
+            <div className="flex-center card-border rounded-xl p-10 border-cyan-200">
               {/* <form
                 ref={formRef}
                 onSubmit={handleSubmit}
@@ -106,7 +106,7 @@ const Contact = () => {
                 </button>
               </form> */}
               <p className="text-center text-2xl font-mono">
-                Contact Me via email {" @ "}
+                Contact Me via email {" @ "} <br/><br/>
                 <a
                   target="blank_"
                   href="mailto:c.naai8980@uca.ac.ma"
@@ -118,9 +118,9 @@ const Contact = () => {
             </div>
           </div>
           <div className="xl:col-span-5">
-            <div className="flex-center card-border rounded-xl p-10">
+            <div className="flex-center card-border rounded-xl p-10 border-cyan-200">
               <p className="text-center text-2xl font-mono">
-              Or via WhatsApp {" @ "}
+              Or via WhatsApp {" @ "} <br/><br/>
               <a 
                 target="blank_"
                 href="https://wa.me/212681679598"

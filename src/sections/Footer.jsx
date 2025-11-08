@@ -1,4 +1,9 @@
 import { socialImgs } from "../constants";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
+
+
 
 const Footer = () => {
   return (
@@ -16,13 +21,13 @@ const Footer = () => {
             </div>
           ))} */}
           <div className="icon">
-            <a href="https://www.linkedin.com/in/charaf-eddine-naai-3970b4219" target="_blank"><img src="/images/linkedin.png"/></a>
+            <a href="https://www.linkedin.com/in/charaf-eddine-naai-3970b4219" target="_blank"><FaLinkedin className="text-2xl"/></a>
           </div>
           <div className="icon">
-            <img src="/images/fb.png"/>
+            <a href="https://github.com/sharaf-naai" target="_blank"><FaGithub className="text-2xl"/></a>
           </div>
           <div className="icon">
-            <img src="/images/insta.png"/>
+            <a href="https://www.instagram.com/sharaf.naai" target="_blank"><FaInstagramSquare className="text-2xl"/></a>
           </div>
         </div>
         <div className="flex flex-col justify-center">

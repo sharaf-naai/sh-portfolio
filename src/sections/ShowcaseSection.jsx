@@ -46,11 +46,11 @@ const AppShowcase = () => {
   return (
     <div id="work" ref={sectionRef} className="app-showcase">
       <div className="w-full flex flex-col gap-10">
-        <p className="w-full text-2xl text-center font-bold border-2 border-white rounded-2xl p-2 bg-black font-mono">✨I’ve shared a glimpse of each project through the homepage — 
+        <p className="w-full text-2xl text-center font-bold border-2 border-white rounded-2xl p-2 bg-black-100 font-mono">✨I’ve shared a glimpse of each project through the homepage — 
           don’t hesitate to contact me if you’d like to know more or have any questions!</p>
         <div className="showcaselayout">
           <div ref={rydeRef} className="first-project-wrapper ">
-            <div className="image-wrapper hover:scale-105 transition-transform duration-300 ease-in-out">
+            <div className="image-wrapper hover:scale-105 transition-transform duration-300 ease-in-out ">
               <img src="/images/project4.png" className="gradient-border" alt="Ryde App Interface" />
             </div>
             <div className="text-content">
@@ -65,10 +65,11 @@ const AppShowcase = () => {
 
           <div className="project-list-wrapper overflow-hidden">
             <div className="project" ref={libraryRef}>
-              <div className="image-wrapper bg-[#FFEFDB]">
+              <div className="image-wrapper  bg-[#FFEFDB]">
                 <img
                   src="/images/project2.png"
                   alt="Library Management Platform"
+                  className="border-cyan-200 border-2"
                 />
               </div>
               <h2 className="font-serif">Refreshing Flavors, Vibrant Energy — SHARAF Brings You the Taste of Every Mood.</h2>
@@ -76,7 +77,7 @@ const AppShowcase = () => {
 
             <div className="project" ref={ycDirectoryRef}>
               <div className="image-wrapper bg-[#FFE7EB]">
-                <a href="https://hanabaly.onrender.com" target="_blank"><img src="/images/project1.png" alt="YC Directory App" /></a>
+                <a href="https://hanabaly.onrender.com" target="_blank"><img src="/images/project1.png" alt="YC Directory App" className="border-cyan-200 border-2"/></a>
               </div>
               <h2 className="font-serif">Connecting You with Psychologists and Mental Coaches
                 Through a Seamless Online Platform — Hanabaly.</h2>
@@ -91,6 +92,7 @@ const AppShowcase = () => {
             <div className="project" ref={libraryRef}>
               <div className="image-wrapper bg-[#FFEFDB]">
                 <img
+                className="border-cyan-200 border-2"
                   src="/images/project3.png"
                   alt="Library Management Platform"
                 />
