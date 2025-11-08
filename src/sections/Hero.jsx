@@ -26,9 +26,9 @@ const Hero = () => {
           <div className="flex flex-col gap-7">
              
             <div className="hero-text">
-              <h1>Hi, I'm Sharaf</h1>
+              <h1>The web, Reimagined.</h1>
               <h1>
-                I do
+                A Fusion of
                 <span className="slide">
                   <span className="wrapper">
                     {words.map((word, index) => (
